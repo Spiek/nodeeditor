@@ -55,18 +55,18 @@ SOURCES += $$PWD/src/Compiler.hpp \
            $$PWD/src/StyleCollection.cpp \
            $$PWD/src/StyleCollection.hpp
 
-HEADERS += $$PWD/include/nodex/Connection \
-           $$PWD/include/nodex/ConnectionStyle \
-           $$PWD/include/nodex/DataModelRegistry \
-           $$PWD/include/nodex/FlowScene \
-           $$PWD/include/nodex/FlowView \
-           $$PWD/include/nodex/FlowViewStyle \
-           $$PWD/include/nodex/Node \
-           $$PWD/include/nodex/NodeData \
-           $$PWD/include/nodex/NodeDataModel \
-           $$PWD/include/nodex/NodeGeometry \
-           $$PWD/include/nodex/NodePainterDelegate \
-           $$PWD/include/nodex/NodeStyle
+HEADERS += $$PWD/include/nodes/Connection \
+           $$PWD/include/nodes/ConnectionStyle \
+           $$PWD/include/nodes/DataModelRegistry \
+           $$PWD/include/nodes/FlowScene \
+           $$PWD/include/nodes/FlowView \
+           $$PWD/include/nodes/FlowViewStyle \
+           $$PWD/include/nodes/Node \
+           $$PWD/include/nodes/NodeData \
+           $$PWD/include/nodes/NodeDataModel \
+           $$PWD/include/nodes/NodeGeometry \
+           $$PWD/include/nodes/NodePainterDelegate \
+           $$PWD/include/nodes/NodeStyle
 
 RESOURCES += $$PWD/resources/DefaultStyle.json \
              $$PWD/resources/resources.qrc
