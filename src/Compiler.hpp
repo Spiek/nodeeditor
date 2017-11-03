@@ -20,6 +20,7 @@
   defined (_MSC_VER)
 #  define NODE_EDITOR_COMPILER "Microsoft Visual C++"
 #  define NODE_EDITOR_COMPILER_MICROSOFT
+#  define NODE_EDITOR_STATIC
 #elif \
   defined (__BORLANDC__)
 #  define NODE_EDITOR_COMPILER "Borland C++ Builder"

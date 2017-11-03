@@ -1,3 +1,8 @@
 *.py
 *.pyc
 CMakeLists.txt.user
+examples/calculator/.vs/
+examples/calculator/debug/
+examples/calculator/objects/
+examples/calculator/release/
+examples/calculator/.qmake.stash
