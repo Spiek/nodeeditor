@@ -37,40 +37,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Connection.cpp">
+    <ClCompile Include="..\..\src\Connection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionBlurEffect.cpp">
+    <ClCompile Include="..\..\src\ConnectionBlurEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionGeometry.cpp">
+    <ClCompile Include="..\..\src\ConnectionGeometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionGraphicsObject.cpp">
+    <ClCompile Include="..\..\src\ConnectionGraphicsObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionPainter.cpp">
+    <ClCompile Include="..\..\src\ConnectionPainter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionState.cpp">
+    <ClCompile Include="..\..\src\ConnectionState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionStyle.cpp">
+    <ClCompile Include="..\..\src\ConnectionStyle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\DataModelRegistry.cpp">
+    <ClCompile Include="..\..\src\DataModelRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DecimalToIntegerModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowScene.cpp">
+    <ClCompile Include="..\..\src\FlowScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowView.cpp">
+    <ClCompile Include="..\..\src\FlowView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowViewStyle.cpp">
+    <ClCompile Include="..\..\src\FlowViewStyle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IntegerToDecimalModel.cpp">
@@ -82,28 +82,28 @@
     <ClCompile Include="ModuloModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Node.cpp">
+    <ClCompile Include="..\..\src\Node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeConnectionInteraction.cpp">
+    <ClCompile Include="..\..\src\NodeConnectionInteraction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeDataModel.cpp">
+    <ClCompile Include="..\..\src\NodeDataModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeGeometry.cpp">
+    <ClCompile Include="..\..\src\NodeGeometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeGraphicsObject.cpp">
+    <ClCompile Include="..\..\src\NodeGraphicsObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodePainter.cpp">
+    <ClCompile Include="..\..\src\NodePainter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeState.cpp">
+    <ClCompile Include="..\..\src\NodeState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeStyle.cpp">
+    <ClCompile Include="..\..\src\NodeStyle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NumberDisplayDataModel.cpp">
@@ -112,10 +112,10 @@
     <ClCompile Include="NumberSourceDataModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Properties.cpp">
+    <ClCompile Include="..\..\src\Properties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\StyleCollection.cpp">
+    <ClCompile Include="..\..\src\StyleCollection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -126,40 +126,40 @@
     <ClInclude Include="AdditionModel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Compiler.hpp">
+    <ClInclude Include="..\..\src\Compiler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Connection.hpp">
+    <ClInclude Include="..\..\include\nodes\Connection">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\src\Connection.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionBlurEffect.hpp">
+    <ClInclude Include="..\..\src\ConnectionBlurEffect.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\Connection">
+    <ClInclude Include="..\..\src\ConnectionGeometry.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionGeometry.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionGraphicsObject.hpp">
+    <CustomBuild Include="..\..\src\ConnectionGraphicsObject.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionPainter.hpp">
+    <ClInclude Include="..\..\src\ConnectionPainter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionState.hpp">
+    <ClInclude Include="..\..\src\ConnectionState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\ConnectionStyle.hpp">
+    <ClInclude Include="..\..\include\nodes\ConnectionStyle">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\ConnectionStyle">
+    <ClInclude Include="..\..\src\ConnectionStyle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\DataModelRegistry.hpp">
+    <ClInclude Include="..\..\include\nodes\DataModelRegistry">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\DataModelRegistry">
+    <ClInclude Include="..\..\src\DataModelRegistry.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DecimalData.hpp">
@@ -171,25 +171,25 @@
     <ClInclude Include="DivisionModel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Export.hpp">
+    <ClInclude Include="..\..\src\Export.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowScene.hpp">
+    <ClInclude Include="..\..\include\nodes\FlowScene">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\src\FlowScene.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\FlowScene">
+    <ClInclude Include="..\..\include\nodes\FlowView">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowView.hpp">
+    <ClInclude Include="..\..\src\FlowView.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\FlowView">
+    <ClInclude Include="..\..\include\nodes\FlowViewStyle">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\FlowViewStyle.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\FlowViewStyle">
+    <ClInclude Include="..\..\src\FlowViewStyle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IntegerData.hpp">
@@ -207,52 +207,52 @@
     <ClInclude Include="MultiplicationModel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Node.hpp">
+    <ClInclude Include="..\..\include\nodes\Node">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\src\Node.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeConnectionInteraction.hpp">
+    <ClInclude Include="..\..\src\NodeConnectionInteraction.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\Node">
+    <ClInclude Include="..\..\include\nodes\NodeData">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeData.hpp">
+    <ClInclude Include="..\..\src\NodeData.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\NodeData">
+    <ClInclude Include="..\..\include\nodes\NodeDataModel">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeDataModel.hpp">
+    <CustomBuild Include="..\..\src\NodeDataModel.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\NodeDataModel">
+    <ClInclude Include="..\..\include\nodes\NodeGeometry">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeGeometry.hpp">
+    <ClInclude Include="..\..\src\NodeGeometry.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\NodeGeometry">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeGraphicsObject.hpp">
+    <CustomBuild Include="..\..\src\NodeGraphicsObject.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodePainter.hpp">
+    <ClInclude Include="..\..\src\NodePainter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodePainterDelegate.hpp">
+    <ClInclude Include="..\..\include\nodes\NodePainterDelegate">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\NodePainterDelegate">
+    <ClInclude Include="..\..\src\NodePainterDelegate.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeState.hpp">
+    <ClInclude Include="..\..\src\NodeState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\NodeStyle.hpp">
+    <ClInclude Include="..\..\include\nodes\NodeStyle">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\include\nodes\NodeStyle">
+    <ClInclude Include="..\..\src\NodeStyle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <CustomBuild Include="NumberDisplayDataModel.hpp">
@@ -261,34 +261,34 @@
     <CustomBuild Include="NumberSourceDataModel.hpp">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\OperatingSystem.hpp">
+    <ClInclude Include="..\..\src\OperatingSystem.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\PortType.hpp">
+    <ClInclude Include="..\..\src\PortType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Properties.hpp">
+    <ClInclude Include="..\..\src\Properties.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\QStringStdHash.hpp">
+    <ClInclude Include="..\..\src\QStringStdHash.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\QUuidStdHash.hpp">
+    <ClInclude Include="..\..\src\QUuidStdHash.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Serializable.hpp">
+    <ClInclude Include="..\..\src\Serializable.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\Style.hpp">
+    <ClInclude Include="..\..\src\Style.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\StyleCollection.hpp">
+    <ClInclude Include="..\..\src\StyleCollection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SubtractionModel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\src\make_unique.hpp">
+    <ClInclude Include="..\..\src\make_unique.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -385,10 +385,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Panic\NodeEditor\resources\DefaultStyle.json">
+    <None Include="..\..\resources\DefaultStyle.json">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="D:\users\BlackStar\Desktop\Edge">
+    <None Include="Panic\nodeeditor\resources\DefaultStyle.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\Edge">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="of">
@@ -400,7 +403,7 @@
     <CustomBuild Include="release\qmake_qmake_immediate.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\users\BlackStar\Desktop\Edge of Panic\NodeEditor\resources\resources.qrc">
+    <CustomBuild Include="..\..\resources\resources.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
   </ItemGroup>
