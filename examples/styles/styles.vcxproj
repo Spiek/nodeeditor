@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A746601-FDF8-332E-B83E-87703FEE3242}</ProjectGuid>
+    <RootNamespace>styles</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>objects\</IntermediateDirectory>
+    <PrimaryOutput>styles</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>objects\</IntermediateDirectory>
+    <PrimaryOutput>styles</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">objects\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">styles</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">objects\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">styles</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtMultimedia;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtCore;release;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>objects\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>objects\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\qtmain.lib;shell32.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Multimedia.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Network.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\styles.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtMultimedia;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\include\QtCore;debug;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>objects\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>objects\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_MULTIMEDIA_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\qtmaind.lib;shell32.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Multimediad.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5OpenGLd.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\styles.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_MULTIMEDIA_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Connection.cpp" />
+    <ClCompile Include="..\..\src\ConnectionBlurEffect.cpp" />
+    <ClCompile Include="..\..\src\ConnectionGeometry.cpp" />
+    <ClCompile Include="..\..\src\ConnectionGraphicsObject.cpp" />
+    <ClCompile Include="..\..\src\ConnectionPainter.cpp" />
+    <ClCompile Include="..\..\src\ConnectionState.cpp" />
+    <ClCompile Include="..\..\src\ConnectionStyle.cpp" />
+    <ClCompile Include="..\..\src\DataModelRegistry.cpp" />
+    <ClCompile Include="..\..\src\FlowScene.cpp" />
+    <ClCompile Include="..\..\src\FlowView.cpp" />
+    <ClCompile Include="..\..\src\FlowViewStyle.cpp" />
+    <ClCompile Include="..\..\src\Node.cpp" />
+    <ClCompile Include="..\..\src\NodeConnectionInteraction.cpp" />
+    <ClCompile Include="..\..\src\NodeDataModel.cpp" />
+    <ClCompile Include="..\..\src\NodeGeometry.cpp" />
+    <ClCompile Include="..\..\src\NodeGraphicsObject.cpp" />
+    <ClCompile Include="..\..\src\NodePainter.cpp" />
+    <ClCompile Include="..\..\src\NodeState.cpp" />
+    <ClCompile Include="..\..\src\NodeStyle.cpp" />
+    <ClCompile Include="..\..\src\Properties.cpp" />
+    <ClCompile Include="..\..\src\StyleCollection.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="models.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Compiler.hpp" />
+    <ClInclude Include="..\..\include\nodes\Connection" />
+    <CustomBuild Include="..\..\src\Connection.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\Connection.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\Connection.hpp -o release\moc_Connection.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/Connection.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_Connection.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\Connection.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\Connection.hpp -o debug\moc_Connection.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/Connection.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_Connection.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\src\ConnectionBlurEffect.hpp" />
+    <ClInclude Include="..\..\src\ConnectionGeometry.hpp" />
+    <CustomBuild Include="..\..\src\ConnectionGraphicsObject.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\ConnectionGraphicsObject.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\ConnectionGraphicsObject.hpp -o release\moc_ConnectionGraphicsObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/ConnectionGraphicsObject.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_ConnectionGraphicsObject.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\ConnectionGraphicsObject.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\ConnectionGraphicsObject.hpp -o debug\moc_ConnectionGraphicsObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/ConnectionGraphicsObject.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_ConnectionGraphicsObject.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\src\ConnectionPainter.hpp" />
+    <ClInclude Include="..\..\src\ConnectionState.hpp" />
+    <ClInclude Include="..\..\include\nodes\ConnectionStyle" />
+    <ClInclude Include="..\..\src\ConnectionStyle.hpp" />
+    <ClInclude Include="..\..\include\nodes\DataModelRegistry" />
+    <ClInclude Include="..\..\src\DataModelRegistry.hpp" />
+    <ClInclude Include="..\..\src\Export.hpp" />
+    <ClInclude Include="..\..\include\nodes\FlowScene" />
+    <CustomBuild Include="..\..\src\FlowScene.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\FlowScene.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\FlowScene.hpp -o release\moc_FlowScene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/FlowScene.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_FlowScene.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\FlowScene.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\FlowScene.hpp -o debug\moc_FlowScene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/FlowScene.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_FlowScene.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\nodes\FlowView" />
+    <ClInclude Include="..\..\src\FlowView.hpp" />
+    <ClInclude Include="..\..\include\nodes\FlowViewStyle" />
+    <ClInclude Include="..\..\src\FlowViewStyle.hpp" />
+    <ClInclude Include="..\..\include\nodes\Node" />
+    <CustomBuild Include="..\..\src\Node.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\Node.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\Node.hpp -o release\moc_Node.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/Node.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_Node.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\Node.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\Node.hpp -o debug\moc_Node.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/Node.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_Node.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\src\NodeConnectionInteraction.hpp" />
+    <ClInclude Include="..\..\include\nodes\NodeData" />
+    <ClInclude Include="..\..\src\NodeData.hpp" />
+    <ClInclude Include="..\..\include\nodes\NodeDataModel" />
+    <CustomBuild Include="..\..\src\NodeDataModel.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\NodeDataModel.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\NodeDataModel.hpp -o release\moc_NodeDataModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/NodeDataModel.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_NodeDataModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\NodeDataModel.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\NodeDataModel.hpp -o debug\moc_NodeDataModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/NodeDataModel.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_NodeDataModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\nodes\NodeGeometry" />
+    <ClInclude Include="..\..\src\NodeGeometry.hpp" />
+    <CustomBuild Include="..\..\src\NodeGraphicsObject.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\src\NodeGraphicsObject.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\NodeGraphicsObject.hpp -o release\moc_NodeGraphicsObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../src/NodeGraphicsObject.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_NodeGraphicsObject.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\src\NodeGraphicsObject.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; ..\..\src\NodeGraphicsObject.hpp -o debug\moc_NodeGraphicsObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../src/NodeGraphicsObject.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_NodeGraphicsObject.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\src\NodePainter.hpp" />
+    <ClInclude Include="..\..\include\nodes\NodePainterDelegate" />
+    <ClInclude Include="..\..\src\NodePainterDelegate.hpp" />
+    <ClInclude Include="..\..\src\NodeState.hpp" />
+    <ClInclude Include="..\..\include\nodes\NodeStyle" />
+    <ClInclude Include="..\..\src\NodeStyle.hpp" />
+    <ClInclude Include="..\..\src\OperatingSystem.hpp" />
+    <ClInclude Include="..\..\src\PortType.hpp" />
+    <ClInclude Include="..\..\src\Properties.hpp" />
+    <ClInclude Include="..\..\src\QStringStdHash.hpp" />
+    <ClInclude Include="..\..\src\QUuidStdHash.hpp" />
+    <ClInclude Include="..\..\src\Serializable.hpp" />
+    <ClInclude Include="..\..\src\Style.hpp" />
+    <ClInclude Include="..\..\src\StyleCollection.hpp" />
+    <ClInclude Include="..\..\src\make_unique.hpp" />
+    <CustomBuild Include="models.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">models.hpp;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; models.hpp -o release\moc_models.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC models.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_models.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">models.hpp;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/mkspecs/win32-msvc -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/examples/styles&quot; -I&quot;C:/Users/danny.van.der.hofsta/Desktop/Projects/Edge of Panic/nodeeditor/include&quot; -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtMultimedia -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtOpenGL -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.3/5.9.3/msvc2017_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt&quot; models.hpp -o debug\moc_models.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC models.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_models.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_Connection.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_Connection.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_ConnectionGraphicsObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ConnectionGraphicsObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_FlowScene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_FlowScene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_Node.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_Node.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_NodeDataModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_NodeDataModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_NodeGraphicsObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_NodeGraphicsObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_models.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_models.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -Bxc:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -Bxc:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_qmake_qmake_immediate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qmake_qmake_immediate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_resources.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_resources.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resources\DefaultStyle.json" />
+    <None Include="Panic\nodeeditor\resources\DefaultStyle.json" />
+    <None Include="..\..\..\..\Edge" />
+    <None Include="of" />
+    <CustomBuild Include="debug\qmake_qmake_immediate.qrc">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qmake_qmake_immediate.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe;..\..\resources\DefaultStyle.json;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe -name qmake_qmake_immediate debug\qmake_qmake_immediate.qrc -o debug\qrc_qmake_qmake_immediate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC debug/qmake_qmake_immediate.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_qmake_qmake_immediate.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\qmake_qmake_immediate.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qmake_qmake_immediate.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe;..\..\resources\DefaultStyle.json;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe -name qmake_qmake_immediate release\qmake_qmake_immediate.qrc -o release\qrc_qmake_qmake_immediate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC release/qmake_qmake_immediate.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_qmake_qmake_immediate.cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resources\resources.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\resources\resources.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe;..\..\resources\DefaultStyle.json;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe -name resources ..\..\resources\resources.qrc -o release\qrc_resources.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC ../../resources/resources.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_resources.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\resources\resources.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe;..\..\resources\DefaultStyle.json;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2017_64\bin\rcc.exe -name resources ..\..\resources\resources.qrc -o debug\qrc_resources.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC ../../resources/resources.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_resources.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
