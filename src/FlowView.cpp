@@ -189,14 +189,8 @@ contextMenuEvent(QContextMenuEvent *event)
       {
         auto child = topLvlItem->child(i);
         auto modelName = child->data(0, Qt::UserRole).toString();
-        if (modelName.contains(text, Qt::CaseInsensitive))
-        {
-          child->setHidden(false);
-        }
-        else
-        {
-          child->setHidden(true);
-        }
+        const bool match = (modelName.contains(text, Qt::CaseInsensitive));
+        child->setHidden(!match);
       }
     }
   });
@@ -260,17 +254,23 @@ void
 FlowView::
 deleteSelectedNodes()
 {
-  // delete the nodes, this will delete many of the connections
-  for (QGraphicsItem * item : _scene->selectedItems())
-  {
-    if (auto n = qgraphicsitem_cast<NodeGraphicsObject*>(item))
-      _scene->removeNode(n->node());
-  }
-
+  // Delete the selected connections first, ensuring that they won't be
+  // automatically deleted when selected nodes are deleted (deleting a node
+  // deletes some connections as well)
   for (QGraphicsItem * item : _scene->selectedItems())
   {
     if (auto c = qgraphicsitem_cast<ConnectionGraphicsObject*>(item))
       _scene->deleteConnection(c->connection());
+  }
+
+  // Delete the nodes; this will delete many of the connections.
+  // Selected connections were already deleted prior to this loop, otherwise
+  // qgraphicsitem_cast<NodeGraphicsObject*>(item) could be a use-after-free
+  // when a selected connection is deleted by deleting the node.
+  for (QGraphicsItem * item : _scene->selectedItems())
+  {
+    if (auto n = qgraphicsitem_cast<NodeGraphicsObject*>(item))
+      _scene->removeNode(n->node());
   }
 }
 

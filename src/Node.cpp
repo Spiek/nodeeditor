@@ -2,6 +2,7 @@
 
 #include <QtCore/QObject>
 
+#include <utility>
 #include <iostream>
 
 #include "FlowScene.hpp"
@@ -24,7 +25,7 @@ using QtNodes::PortType;
 
 Node::
 Node(std::unique_ptr<NodeDataModel> && dataModel)
-  : _id(QUuid::createUuid())
+  : _uid(QUuid::createUuid())
   , _nodeDataModel(std::move(dataModel))
   , _nodeState(_nodeDataModel)
   , _nodeGeometry(_nodeDataModel)
@@ -39,7 +40,7 @@ Node(std::unique_ptr<NodeDataModel> && dataModel)
 
 
 Node::
-~Node() {}
+~Node() = default;
 
 QJsonObject
 Node::
@@ -47,7 +48,7 @@ save() const
 {
   QJsonObject nodeJson;
 
-  nodeJson["id"] = _id.toString();
+  nodeJson["id"] = _uid.toString();
 
   nodeJson["model"] = _nodeDataModel->save();
 
@@ -64,7 +65,7 @@ void
 Node::
 restore(QJsonObject const& json)
 {
-  _id = QUuid(json["id"].toString());
+  _uid = QUuid(json["id"].toString());
 
   QJsonObject positionJson = json["position"].toObject();
   QPointF     point(positionJson["x"].toDouble(),
@@ -79,15 +80,14 @@ QUuid
 Node::
 id() const
 {
-  return _id;
+  return _uid;
 }
 
 
 void
 Node::
 reactToPossibleConnection(PortType reactingPortType,
-
-                          NodeDataType reactingDataType,
+                          NodeDataType const &reactingDataType,
                           QPointF const &scenePoint)
 {
   QTransform const t = _nodeGraphicsObject->sceneTransform();
@@ -184,7 +184,7 @@ Node::
 propagateData(std::shared_ptr<NodeData> nodeData,
               PortIndex inPortIndex) const
 {
-  _nodeDataModel->setInData(nodeData, inPortIndex);
+  _nodeDataModel->setInData(std::move(nodeData), inPortIndex);
 
   //Recalculate the nodes visuals. A data change can result in the node taking more space than before, so this forces a recalculate+repaint on the affected node
   _nodeGraphicsObject->setGeometryChanged();

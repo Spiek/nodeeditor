@@ -131,9 +131,9 @@ recalculateSize(QFont const & font) const
 
 QPointF
 NodeGeometry::
-portScenePosition(int index,
+portScenePosition(PortIndex index,
                   PortType portType,
-                  QTransform t) const
+                  QTransform const & t) const
 {
   auto const &nodeStyle = StyleCollection::nodeStyle();
 
@@ -180,7 +180,7 @@ PortIndex
 NodeGeometry::
 checkHitScenePoint(PortType portType,
                    QPointF const scenePoint,
-                   QTransform sceneTransform) const
+                   QTransform const & sceneTransform) const
 {
   auto const &nodeStyle = StyleCollection::nodeStyle();
 
@@ -191,9 +191,9 @@ checkHitScenePoint(PortType portType,
 
   double const tolerance = 2.0 * nodeStyle.ConnectionPointDiameter;
 
-  size_t const nItems = _dataModel->nPorts(portType);
+  unsigned int const nItems = _dataModel->nPorts(portType);
 
-  for (size_t i = 0; i < nItems; ++i)
+  for (unsigned int i = 0; i < nItems; ++i)
   {
     auto pp = portScenePosition(i, portType, sceneTransform);
 

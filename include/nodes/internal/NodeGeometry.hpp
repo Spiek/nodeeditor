@@ -1,7 +1,5 @@
 #pragma once
 
-#include <memory>
-
 #include <QtCore/QRectF>
 #include <QtCore/QPointF>
 #include <QtGui/QTransform>
@@ -9,6 +7,7 @@
 
 #include "PortType.hpp"
 #include "Export.hpp"
+#include "memory.hpp"
 
 namespace QtNodes
 {
@@ -93,12 +92,12 @@ public:
   QPointF
   portScenePosition(PortIndex index,
                     PortType portType,
-                    QTransform t = QTransform()) const;
+                    QTransform const & t = QTransform()) const;
 
   PortIndex
   checkHitScenePoint(PortType portType,
-                     QPointF const point,
-                     QTransform t = QTransform()) const;
+                     QPointF point,
+                     QTransform const & t = QTransform()) const;
 
   QRect
   resizeRect() const;

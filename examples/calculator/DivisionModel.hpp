@@ -24,8 +24,11 @@ public:
   { return QStringLiteral("Division"); }
 
   bool
-  portCaptionVisible(PortType, PortIndex) const override
-  { return true; }
+  portCaptionVisible(PortType portType, PortIndex portIndex) const override
+  {
+    Q_UNUSED(portType); Q_UNUSED(portIndex);
+    return true;
+  }
 
   QString
   portCaption(PortType portType, PortIndex portIndex) const override
@@ -52,10 +55,6 @@ public:
   QString
   name() const override
   { return QStringLiteral("Division"); }
-
-  std::unique_ptr<NodeDataModel>
-  clone() const override
-  { return std::make_unique<DivisionModel>(); }
 
 private:
 

@@ -5,12 +5,13 @@
 
 #include <unordered_map>
 #include <tuple>
-#include <memory>
 #include <functional>
 
 #include "QUuidStdHash.hpp"
 #include "Export.hpp"
 #include "DataModelRegistry.hpp"
+#include "TypeConverter.hpp"
+#include "memory.hpp"
 
 namespace QtNodes
 {
@@ -30,21 +31,26 @@ class NODE_EDITOR_PUBLIC FlowScene
   Q_OBJECT
 public:
 
-  FlowScene(std::shared_ptr<DataModelRegistry> registry =
-              std::make_shared<DataModelRegistry>());
+  FlowScene(std::shared_ptr<DataModelRegistry> registry,
+            QObject * parent = Q_NULLPTR);
+
+  FlowScene(QObject * parent = Q_NULLPTR);
 
   ~FlowScene();
 
 public:
 
-  std::shared_ptr<Connection>createConnection(PortType connectedPort,
-                                              Node& node,
-                                              PortIndex portIndex);
+  std::shared_ptr<Connection>
+  createConnection(PortType connectedPort,
+                   Node& node,
+                   PortIndex portIndex);
 
-  std::shared_ptr<Connection>createConnection(Node& nodeIn,
-                                              PortIndex portIndexIn,
-                                              Node& nodeOut,
-                                              PortIndex portIndexOut);
+  std::shared_ptr<Connection>
+  createConnection(Node& nodeIn,
+                   PortIndex portIndexIn,
+                   Node& nodeOut,
+                   PortIndex portIndexOut,
+                   TypeConverter const & converter = TypeConverter{});
 
   std::shared_ptr<Connection>restoreConnection(QJsonObject const &connectionJson);
 
@@ -60,11 +66,11 @@ public:
 
   void setRegistry(std::shared_ptr<DataModelRegistry> registry);
 
-  void iterateOverNodes(std::function<void(Node*)> visitor);
+  void iterateOverNodes(std::function<void(Node*)> const & visitor);
 
-  void iterateOverNodeData(std::function<void(NodeDataModel*)> visitor);
+  void iterateOverNodeData(std::function<void(NodeDataModel*)> const & visitor);
 
-  void iterateOverNodeDataDependentOrder(std::function<void(NodeDataModel*)> visitor);
+  void iterateOverNodeDataDependentOrder(std::function<void(NodeDataModel*)> const & visitor);
 
   QPointF getNodePosition(const Node& node) const;
 
@@ -126,5 +132,5 @@ private:
 
 Node*
 locateNodeAt(QPointF scenePoint, FlowScene &scene,
-             QTransform viewTransform);
+             QTransform const & viewTransform);
 }

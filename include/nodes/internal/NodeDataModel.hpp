@@ -1,6 +1,5 @@
 #pragma once
 
-#include <memory>
 
 #include <QtWidgets/QWidget>
 
@@ -11,6 +10,7 @@
 #include "NodeStyle.hpp"
 #include "NodePainterDelegate.hpp"
 #include "Export.hpp"
+#include "memory.hpp"
 
 namespace QtNodes
 {
@@ -56,10 +56,6 @@ public:
   /// Name makes this model unique
   virtual QString
   name() const = 0;
-
-  /// Function creates instances of a model stored in DataModelRegistry
-  virtual std::unique_ptr<NodeDataModel>
-  clone() const = 0;
 
 public:
 
