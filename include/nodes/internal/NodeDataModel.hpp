@@ -56,6 +56,10 @@ public:
   /// It is possible to delete the node?
   virtual bool
   isNodeDeleteable() { return true; }
+  
+  /// It is possible to connect the output port to own input port?
+  virtual bool
+  allowLoopConnection() { return false; }
 
   /// Name makes this model unique
   virtual QString

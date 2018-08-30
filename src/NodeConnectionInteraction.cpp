@@ -40,8 +40,7 @@ canConnect(PortIndex &portIndex, TypeConverter & converter) const
 
   // 1.5) Forbid connecting the node to itself
   Node* node = _connection->getNode(oppositePort(requiredPort));
-
-  if (node == _node)
+  if (node == _node && !_node->nodeDataModel()->allowLoopConnection())
     return false;
 
   // 2) connection point is on top of the node port
