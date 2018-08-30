@@ -269,8 +269,10 @@ deleteSelectedNodes()
   // when a selected connection is deleted by deleting the node.
   for (QGraphicsItem * item : _scene->selectedItems())
   {
-    if (auto n = qgraphicsitem_cast<NodeGraphicsObject*>(item))
-      _scene->removeNode(n->node());
+      QtNodes::NodeGraphicsObject* n = qgraphicsitem_cast<NodeGraphicsObject*>(item);
+      if(n && n->node().nodeDataModel()->isNodeDeleteable()) {
+        _scene->removeNode(n->node());
+      }
   }
 }
 

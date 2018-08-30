@@ -53,6 +53,10 @@ public:
   virtual bool
   portCaptionVisible(PortType, PortIndex) const { return false; }
 
+  /// It is possible to delete the node?
+  virtual bool
+  isNodeDeleteable() { return true; }
+
   /// Name makes this model unique
   virtual QString
   name() const = 0;
