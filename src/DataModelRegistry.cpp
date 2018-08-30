@@ -43,7 +43,7 @@ DataModelRegistry::CategoriesSet const &
 DataModelRegistry::
 categories() const
 {
-  return _categories;
+    return _categories;
 }
 
 
@@ -62,4 +62,12 @@ getTypeConverter(NodeDataType const & d1,
   }
 
   return TypeConverter{};
+}
+
+void
+DataModelRegistry::
+addCategory(const QString &category)
+{
+    if(std::find(_categories.begin(), _categories.end(), category) != _categories.end()) return;
+    _categories.push_back(category);
 }
