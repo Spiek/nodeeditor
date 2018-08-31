@@ -71,8 +71,6 @@ restore(QJsonObject const& json)
   QPointF     point(positionJson["x"].toDouble(),
                     positionJson["y"].toDouble());
   _nodeGraphicsObject->setPos(point);
-
-  _nodeDataModel->restore(json["model"].toObject());
 }
 
 
