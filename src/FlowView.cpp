@@ -135,6 +135,8 @@ contextMenuEvent(QContextMenuEvent *event)
   QMap<QString, QTreeWidgetItem*> topLevelItems;
   for (auto const &cat : _scene->registry().categories())
   {
+	// skip all categories which are equal \x18 (Ascii char for CAN -> Cancel)
+    if(cat == "\x18") continue;
     auto item = new QTreeWidgetItem(treeView);
     item->setText(0, cat);
     item->setData(0, Qt::UserRole, skipText);
@@ -143,6 +145,8 @@ contextMenuEvent(QContextMenuEvent *event)
 
   for (auto const &assoc : _scene->registry().registeredModelsCategoryAssociation())
   {
+	// skip all elements whose category was not found in top level items
+    if(!topLevelItems.contains(assoc.second)) continue;
     auto parent = topLevelItems[assoc.second];
     auto item   = new QTreeWidgetItem(parent);
     item->setText(0, assoc.first);
