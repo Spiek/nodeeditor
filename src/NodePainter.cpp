@@ -73,6 +73,9 @@ drawNodeRect(QPainter* painter,
                ? nodeStyle.SelectedBoundaryColor
                : nodeStyle.NormalBoundaryColor;
 
+  // forward to datasource
+  emit model->nodeSelectionChanged(graphicsObject.isSelected());
+
   if (geom.hovered())
   {
     QPen p(color, nodeStyle.HoveredPenWidth);

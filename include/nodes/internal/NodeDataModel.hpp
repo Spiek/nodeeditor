@@ -151,7 +151,17 @@ signals:
   void
   computingFinished();
 
-private:
+  // do a complete repaint of node
+  void
+  repaintNode();
+
+  void
+  nodeDoubleClicked();
+
+  void
+  nodeSelectionChanged(bool active) const;
+
+protected:
 
   NodeStyle _nodeStyle;
 };

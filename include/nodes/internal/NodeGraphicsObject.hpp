@@ -54,6 +54,9 @@ public:
   void
   lock(bool locked);
 
+  void
+  repaintNode();
+
 protected:
   void
   paint(QPainter*                       painter,

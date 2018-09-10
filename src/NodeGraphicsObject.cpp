@@ -66,6 +66,8 @@ NodeGraphicsObject(FlowScene &scene,
   connect(this, &QGraphicsObject::xChanged, this, onMoveSlot);
   connect(this, &QGraphicsObject::yChanged, this, onMoveSlot);
 
+  // handle datasource signals
+  connect(node.nodeDataModel(), &QtNodes::NodeDataModel::repaintNode, this, &NodeGraphicsObject::repaintNode);
 }
 
 
@@ -160,6 +162,14 @@ void NodeGraphicsObject::lock(bool locked)
   setFlag(QGraphicsItem::ItemIsSelectable, !locked);
 }
 
+void NodeGraphicsObject::repaintNode()
+{
+    // do a complete repaint of node
+    this->setGeometryChanged();
+    this->node().nodeGeometry().recalculateSize();
+    this->moveConnections();
+    this->update();
+}
 
 void
 NodeGraphicsObject::
@@ -390,6 +400,8 @@ NodeGraphicsObject::
 mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event)
 {
   QGraphicsItem::mouseDoubleClickEvent(event);
+
+  if(node().nodeDataModel()) emit node().nodeDataModel()->nodeDoubleClicked();
 
   _scene.nodeDoubleClicked(node());
 }
